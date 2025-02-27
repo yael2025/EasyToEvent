@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyToEvent</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>EasyToEvent</h1>
+        <button id="theme-toggle">🌙 מצב כהה</button>
+    </header>
+
+    <section class="event-setup">
+        <h2>📅 בחר תאריך, שעה ומיקום</h2>
+        <label for="event-date">תאריך:</label>
+        <input type="date" id="event-date">
+        <label for="event-time">שעה:</label>
+        <input type="time" id="event-time">
+        
+        <label for="event-location">📍 מיקום האירוע:</label>
+        <input type="text" id="event-location" placeholder="הכנס כתובת">
+        
+        <button id="save-event">💾 שמור אירוע</button>
+    </section>
+
+    <section class="event-info">
+        <h2>שם האירוע</h2>
+        <p id="event-datetime">📅 תאריך: עדיין לא נבחר</p>
+        <div id="countdown">⏳ ספירה לאחור תופיע כאן</div>
+        <p id="event-location-display">📍 מיקום: עדיין לא נבחר</p>
+        <button id="navigate-google">🗺️ נווט עם Google Maps</button>
+        <button id="navigate-waze">🚗 נווט עם Waze</button>
+    </section>
+
+    <section class="map">
+        <h2>🌍 מפת האירוע</h2>
+        <iframe id="map-frame" src="" style="display: none;"></iframe>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

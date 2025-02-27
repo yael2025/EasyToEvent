@@ -1,0 +1,50 @@
+/* עיצוב כללי */
+body {
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+}
+
+/* טפסים */
+input, button {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* ספירה לאחור */
+#countdown {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* מצב כהה */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
